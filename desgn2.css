@@ -1,0 +1,547 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+}
+
+.navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    transition: box-shadow 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Add shadow to the navbar on hover */
+.navbar:hover {
+    box-shadow: 0px 4px 15px rgba(230, 135, 1, 0.6);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    transition: color 0.3s ease;
+}
+
+/* Add hover effect to nav links */
+.navbar a:hover {
+    background-color: #151414;
+    border-radius: 5px;
+    color: #ffcc00; /* Change link color on hover */
+}
+
+.navbar-title {
+    
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, text-shadow 0.10s ease;
+   
+}
+
+/* Add animation effect when hovering on the navbar */
+.navbar:hover .navbar-title {
+    transform: scale(1.1);
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 15px;
+}
+
+
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 600px) {
+    .navbar-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.intro-section {
+    margin-top: 50px;
+    margin-left: 10px;
+    
+}
+
+.intro-section h2 {
+    font-size: 32px;
+    margin: 0;
+    padding:0 ;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.intro-section p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #ffcc00; /* Highlight the analyst roles in a different color */
+}
+
+/* Styling for the Hire Me button */
+.hire-me-btn {
+   margin-top: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hire-me-btn:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
+}
+
+
+/* about me css */
+/* About Me Section */
+.about-me-section {
+    background-color: black;
+    padding-top: 5%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left; /* Align text to the left */
+
+    padding-bottom: 5%;
+}
+
+.about-me-content {
+    display: flex;
+    flex-direction: row;
+    gap: 30px; /* Space between the image and text */
+    max-width: 1200px; /* Set a max-width for the container */
+    align-items: center;
+}
+
+.about-me-image {
+    margin-right: 10px;
+    width: 450px; /* Set the image width */
+    height: 420px;
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image fits within the circular frame */
+    box-shadow: 0px 4px 15px rgba(129, 67, 1, 0.4); /* Add a shadow to the image */
+}
+
+.about-me-text {
+    color: white;
+}
+
+.about-me-text h2 {
+    font-size: 32px;
+    color: #f4f1f1; /* Optional: Different color for the heading */
+    background-color: rgb(7, 7, 7);
+    margin-right: 72%;
+    padding: 1%;
+    border-radius: 30px;
+    box-shadow: #ff6600;
+
+}
+
+
+.about-me-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+    max-width: 600px; /* Limit the text width */
+}
+
+.about-me-image:hover{
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    text-shadow: 0 0 25px orangered,
+    0 0 25px orangered;
+}
+
+
+.about-me-section {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    transition: box-shadow 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(8, 8, 8, 0.7);
+}
+
+
+/* Add shadow to the navbar on hover */
+.about-me-section:hover {
+    box-shadow: 0px 4px 15px rgba(230, 135, 1, 0.6);
+}
+
+
+
+
+.skills-section {
+    padding: 30px;
+    background-color: #070000;
+    text-shadow: black;
+    transition: transform 0.3s ease, text-shadow 0.10s ease;
+}
+
+.skills-section h2 {
+    background-color: #060606;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    
+}
+
+.skill-categories {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.skill-category h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+   
+}
+
+.skill-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-category li {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.skills-section:hover {
+    box-shadow: 0px 4px 15px rgba(230, 135, 1, 0.6);
+}
+
+/* Project Section CSS */
+#projects {
+    margin: 1px;
+    padding: 40px 0;
+    background-color: #f9c79e;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #040000;
+    background-color: #acb0f5;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 1%;
+    border-radius: 50px 10px 50px 10px;
+    
+    
+}
+
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.project-item {
+    flex: 1 1 calc(33.333% - 20px);
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #eabd9bc4;
+    box-shadow: 0 4px 6px rgba(255, 254, 254, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.project-item p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project-item a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.project-item a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+    background-color: #ff6600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .project-item {
+        flex: 1 1 100%;
+    }
+}
+
+/* Certificate Section CSS */
+#certificates {
+    padding: 60px 0;
+    background-color: #040007;
+}
+
+#certificates h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #f9f7f7;
+    position: relative;
+}
+
+#certificates h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #3498db;
+    margin: 20px auto 0;
+    border-radius: 2px;
+}
+
+.certificate-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.certificate-item {
+    flex: 1 1 calc(33.333% - 20px);
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.certificate-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+.certificate-item:hover::before {
+    opacity: 0;
+}
+
+.certificate-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    background-color: #e8f4f8;
+}
+
+.certificate-item h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    position: relative;
+    z-index: 1;
+}
+
+.certificate-item p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.certificate-item a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: 500;
+    font-size: 18px;
+    border-bottom: 2px solid #3498db;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.certificate-item a:hover {
+    color: #2980b9;
+    border-bottom: 2px solid #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .certificate-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .certificate-item {
+        flex: 1 1 100%;
+    }
+}
+
+
+/* Enhanced Footer Section CSS */
+.footer-section {
+    background: linear-gradient(135deg, #0a0a0a, #2c2c2c);
+    color: #f1f1f1;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 60px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-menu a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-menu a:hover {
+    color: #ff6600;
+    transform: translateY(-3px);
+}
+
+.footer-menu i {
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Make footer responsive on small screens */
+@media (max-width: 768px) {
+    .footer-menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container p {
+        font-size: 14px;
+    }
+
+    .footer-menu a {
+        font-size: 16px;
+    }
+}
+
+
+
+/* cv button*/
+
+.cv-container {
+    text-align: right; /* Aligns the button to the right */
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+  
+  .download-cv-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .download-cv-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+
+  
+
+
+
+
+
+  .move-to-top-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Adjust margin as needed */
+    text-align: center; /* Center text in button */
+  }
+  
+  .move-to-top-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .footer-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
